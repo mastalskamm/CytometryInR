@@ -368,6 +368,23 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
  <span class="menu-text">Concatenate - Extended Cut</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false">
+ <span class="menu-text">Spectral Flow Cytometry</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../course/SDY3080/ImmPort.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Retrieving ImmPort data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -729,19 +746,19 @@ Attaching package: 'Matrix'</code></pre>
 <span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose     =</span> <span class="cn">TRUE</span></span>
 <span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:17 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
+<pre><code>14:33:45 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:17 Converting dataframe to numerical matrix</code></pre>
+<pre><code>14:33:45 Converting dataframe to numerical matrix</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:17 Read 30000 rows and found 6 numeric columns</code></pre>
+<pre><code>14:33:45 Read 30000 rows and found 6 numeric columns</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:17 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
+<pre><code>14:33:45 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:18 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
+<pre><code>14:33:45 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>0%   10   20   30   40   50   60   70   80   90   100%</code></pre>
@@ -751,14 +768,14 @@ Attaching package: 'Matrix'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>**************************************************|
-19:47:20 Writing NN index file to temp file /tmp/Rtmp4sjtHU/file6ca9719cfd29
-19:47:20 Searching Annoy index using 4 threads, search_k = 1500
-19:47:23 Annoy recall = 100%
-19:47:23 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
-19:47:24 Initializing from normalized Laplacian + noise (using RSpectra)
-19:47:25 Commencing optimization for 200 epochs, with 565690 positive edges
-19:47:25 Using rng type: pcg
-19:47:37 Optimization finished</code></pre>
+14:33:48 Writing NN index file to temp file /tmp/RtmpNdahdr/file60a65605d3e8
+14:33:48 Searching Annoy index using 4 threads, search_k = 1500
+14:33:51 Annoy recall = 100%
+14:33:52 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
+14:33:52 Initializing from normalized Laplacian + noise (using RSpectra)
+14:33:53 Commencing optimization for 200 epochs, with 565688 positive edges
+14:33:53 Using rng type: pcg
+14:34:07 Optimization finished</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP1 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">1</span>]</span>
 <span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP2 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">2</span>]</span>
@@ -794,19 +811,19 @@ Attaching package: 'Matrix'</code></pre>
 <span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose     =</span> <span class="cn">TRUE</span></span>
 <span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:38 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
+<pre><code>14:34:09 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:38 Converting dataframe to numerical matrix</code></pre>
+<pre><code>14:34:09 Converting dataframe to numerical matrix</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:38 Read 30000 rows and found 6 numeric columns</code></pre>
+<pre><code>14:34:09 Read 30000 rows and found 6 numeric columns</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:38 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
+<pre><code>14:34:09 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:38 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
+<pre><code>14:34:09 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>0%   10   20   30   40   50   60   70   80   90   100%</code></pre>
@@ -816,14 +833,14 @@ Attaching package: 'Matrix'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>**************************************************|
-19:47:40 Writing NN index file to temp file /tmp/Rtmp4sjtHU/file6ca96c070cb1
-19:47:40 Searching Annoy index using 4 threads, search_k = 1500
-19:47:43 Annoy recall = 100%
-19:47:43 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
-19:47:44 Initializing from normalized Laplacian + noise (using RSpectra)
-19:47:45 Commencing optimization for 200 epochs, with 560876 positive edges
-19:47:45 Using rng type: pcg
-19:47:56 Optimization finished</code></pre>
+14:34:12 Writing NN index file to temp file /tmp/RtmpNdahdr/file60a61c4c0578
+14:34:12 Searching Annoy index using 4 threads, search_k = 1500
+14:34:15 Annoy recall = 100%
+14:34:15 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
+14:34:16 Initializing from normalized Laplacian + noise (using RSpectra)
+14:34:17 Commencing optimization for 200 epochs, with 560876 positive edges
+14:34:17 Using rng type: pcg
+14:34:30 Optimization finished</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP1 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">1</span>]</span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP2 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">2</span>]</span>
@@ -859,19 +876,19 @@ Attaching package: 'Matrix'</code></pre>
 <span id="cb61-11"><a href="#cb61-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose     =</span> <span class="cn">TRUE</span></span>
 <span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:57 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
+<pre><code>14:34:32 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:57 Converting dataframe to numerical matrix</code></pre>
+<pre><code>14:34:32 Converting dataframe to numerical matrix</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:57 Read 30000 rows and found 6 numeric columns</code></pre>
+<pre><code>14:34:32 Read 30000 rows and found 6 numeric columns</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:57 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
+<pre><code>14:34:32 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:47:57 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
+<pre><code>14:34:32 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>0%   10   20   30   40   50   60   70   80   90   100%</code></pre>
@@ -881,14 +898,14 @@ Attaching package: 'Matrix'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>**************************************************|
-19:47:59 Writing NN index file to temp file /tmp/Rtmp4sjtHU/file6ca96a46cfc3
-19:47:59 Searching Annoy index using 4 threads, search_k = 1500
-19:48:02 Annoy recall = 100%
-19:48:02 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
-19:48:03 Initializing from normalized Laplacian + noise (using RSpectra)
-19:48:04 Commencing optimization for 200 epochs, with 568868 positive edges
-19:48:04 Using rng type: pcg
-19:48:16 Optimization finished</code></pre>
+14:34:35 Writing NN index file to temp file /tmp/RtmpNdahdr/file60a63443ba2f
+14:34:35 Searching Annoy index using 4 threads, search_k = 1500
+14:34:38 Annoy recall = 100%
+14:34:38 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
+14:34:39 Initializing from normalized Laplacian + noise (using RSpectra)
+14:34:41 Commencing optimization for 200 epochs, with 568868 positive edges
+14:34:41 Using rng type: pcg
+14:34:54 Optimization finished</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP1 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">1</span>]</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP2 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">2</span>]</span>
@@ -924,19 +941,19 @@ Attaching package: 'Matrix'</code></pre>
 <span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">verbose     =</span> <span class="cn">TRUE</span></span>
 <span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:48:17 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
+<pre><code>14:34:56 UMAP embedding parameters a = 1.262 b = 1.003</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:48:17 Converting dataframe to numerical matrix</code></pre>
+<pre><code>14:34:56 Converting dataframe to numerical matrix</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:48:17 Read 30000 rows and found 6 numeric columns</code></pre>
+<pre><code>14:34:56 Read 30000 rows and found 6 numeric columns</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:48:17 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
+<pre><code>14:34:56 Using Annoy for neighbor search, n_neighbors = 15</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>19:48:17 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
+<pre><code>14:34:56 Building Annoy index with metric = euclidean, n_trees = 50</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>0%   10   20   30   40   50   60   70   80   90   100%</code></pre>
@@ -946,17 +963,17 @@ Attaching package: 'Matrix'</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>**************************************************|
-19:48:19 Writing NN index file to temp file /tmp/Rtmp4sjtHU/file6ca9e6a5035
-19:48:19 Searching Annoy index using 4 threads, search_k = 1500
-19:48:22 Annoy recall = 100%
-19:48:22 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
-19:48:23 Found 3 connected components, falling back to 'spca' initialization with init_sdev = 1
-19:48:23 Using 'irlba' for PCA
-19:48:23 PCA: 2 components explained 71.72% variance
-19:48:23 Scaling init to sdev = 1
-19:48:23 Commencing optimization for 200 epochs, with 571048 positive edges
-19:48:23 Using rng type: pcg
-19:48:34 Optimization finished</code></pre>
+14:34:59 Writing NN index file to temp file /tmp/RtmpNdahdr/file60a61137357a
+14:34:59 Searching Annoy index using 4 threads, search_k = 1500
+14:35:02 Annoy recall = 100%
+14:35:03 Commencing smooth kNN distance calibration using 4 threads with target n_neighbors = 15
+14:35:04 Found 3 connected components, falling back to 'spca' initialization with init_sdev = 1
+14:35:04 Using 'irlba' for PCA
+14:35:04 PCA: 2 components explained 71.72% variance
+14:35:04 Scaling init to sdev = 1
+14:35:04 Commencing optimization for 200 epochs, with 571048 positive edges
+14:35:04 Using rng type: pcg
+14:35:17 Optimization finished</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP1 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">1</span>]</span>
 <span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>Dataset<span class="sc">$</span>UMAP2 <span class="ot">&lt;-</span> Toy_UMAP[, <span class="dv">2</span>]</span>

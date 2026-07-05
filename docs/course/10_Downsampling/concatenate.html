@@ -67,7 +67,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../course/community/AutoSpectral/index.html" rel="next">
+<link href="../../course/SDY3080/ImmPort.html" rel="next">
 <link href="../../Schedule.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -399,6 +399,23 @@ window.Quarto = {
  <span class="menu-text">Concatenate - Extended Cut</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false">
+ <span class="menu-text">Spectral Flow Cytometry</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course/SDY3080/ImmPort.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Retrieving ImmPort data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -754,33 +771,33 @@ Attaching package: 'dplyr'</code></pre>
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(Values[[<span class="dv">1</span>]], <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>    Time    SSC-W  SSC-H    SSC-A    FSC-W   FSC-H   FSC-A  SSC-B-W SSC-B-H
-1 588401 762223.4 548269 696505.8 736376.9 1527828 1875095 750952.3  412949
-2 250195 813415.7 380472 515803.2 702315.6  946587 1108005 783658.6  416796
-3  78897 783736.8 501835 655510.9 773776.9 1278025 1648177 751890.0  352894
-   SSC-B-A  BUV395-A  BUV563-A   BUV615-A  BUV661-A BUV737-A BUV805-A
-1 516841.7 5600.4980  4938.275  -516.7477 -164.0196 8157.343 30835.38
-2 544376.3  261.1854 64090.156 17400.9160 -691.7723 1880.757 31599.43
-3 442229.1  540.1149 10496.601  -587.5511  504.5094 2642.105 10402.84
-  Pacific Blue-A    BV480-A     BV570-A    BV605-A   BV650-A    BV711-A
-1       639.3572 -508.43616   -76.43844 24300.0156 -616.8234  1071.5861
-2      1091.4148  -73.42968 -1949.09753   119.4482  283.9139 -1200.6151
-3       568.3593  -41.86399  3912.87842 25261.8730  770.9644  -557.9022
-    BV750-A   BV786-A Alexa Fluor 488-A Spark Blue 550-A Spark Blue 574-A
-1  177.3154  346.3435          867.1566         27497.27         5952.421
-2  312.6221 -432.0108         1456.5096         33643.94        12698.401
-3 1610.6205 -177.1566          296.2962         14254.67        10679.766
-    RB613-A   RB705-A   RB780-A      PE-A PE-Dazzle594-A   PE-Cy5-A
-1  1203.070 48825.105  413.9891 2677.6541       343.5904 845.890320
-2 10694.496 27426.508 -402.4053 6677.7886      1471.0829  -3.816629
-3  4092.519  3838.563 -321.7406 -106.8473      1208.8346 -27.595678
-  PE-Fire 700-A PE-Fire 744-A PE-Vio770-A    APC-A Alexa Fluor 647-A APC-R700-A
-1      8958.247      366.5674    275.4553 392.8981         -16.03715  571.16467
-2     10563.852     9834.1543   -115.4220 456.9184         616.08954  -24.18073
-3      1780.969      113.0802    683.8033 158.2947        -487.44681  934.31372
+1 569718 735006.8 451096 552597.7 724836.5 1306589 1578439 723546.8  319948
+2 664750 736711.6 282500 346868.3 701314.3 1093326 1277942 713544.6  236795
+3 122942 813159.8 403713 547138.6 740871.1 1382700 1707337 816464.2  312698
+   SSC-B-A  BUV395-A BUV563-A   BUV615-A  BUV661-A  BUV737-A BUV805-A
+1 385828.9  7073.214 2980.259 -183.12750  302.0168 17154.477 32266.50
+2 281606.3  1947.683 5162.803 -433.43549  547.5488 13916.538 34562.78
+3 425511.2 17311.400 3220.592   73.49756 -188.5359  7778.372 30327.39
+  Pacific Blue-A   BV480-A     BV570-A  BV605-A   BV650-A   BV711-A   BV750-A
+1       205.2083 -724.7899    6.024807 51695.01 -105.3464 1248.0292  835.8068
+2       431.5034  358.1596 -518.355591 28236.95  902.7900  684.2457 -106.3043
+3      1137.2607 -252.6228 -207.052567 11855.92  259.5836 -194.7905  934.0159
+    BV786-A Alexa Fluor 488-A Spark Blue 550-A Spark Blue 574-A    RB613-A
+1 -65.86583         -495.5481         27064.89         14269.60 -1318.1555
+2 950.70410          258.3294         56160.83         13647.04  -735.9675
+3 524.78064          190.7974         37358.54         10642.19   471.1873
+   RB705-A  RB780-A     PE-A PE-Dazzle594-A  PE-Cy5-A PE-Fire 700-A
+1 63664.04 446.7836 1090.995      1130.1836 -266.8655      3940.161
+2 14542.03 387.7481 2285.601      1062.1901 -457.7373      4460.048
+3 94253.55 216.6012 2100.140       358.9336 -180.3640      6821.991
+  PE-Fire 744-A PE-Vio770-A      APC-A Alexa Fluor 647-A APC-R700-A
+1     352.39749    65.40487  738.96637         -258.2641   358.7878
+2      40.59173  2081.14429  -94.80936          446.1342  -473.9799
+3    -288.76682   727.80573 1364.49744         -332.9410  1287.5844
   Zombie NIR-A APC-Fire 750-A APC-Fire 810-A     AF-A
-1     593.6538      11853.690      13184.705 5019.014
-2    2024.4456      16053.118       4410.334 3472.045
-3     723.4050       7604.958       3671.826 4959.960</code></pre>
+1     842.6860      14778.357      15142.657 4934.762
+2     628.4554      12752.763       9698.445 2236.619
+3    2382.4658       9252.688      11154.097 4862.345</code></pre>
 </div>
 </div>
 <p>Having retrieved back a “data.frame” style, lets switch “returnType” argument back and make sure we can still also retrieve a “flowFrame” object (which means our conditional statement is implemented correctly).</p>
@@ -3246,8 +3263,8 @@ $P47 HEU_status     NA      2001      1000      3000
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../course/community/AutoSpectral/index.html" class="pagination-link" aria-label="AutoSpectral">
-        <span class="nav-page-text">AutoSpectral</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../course/SDY3080/ImmPort.html" class="pagination-link" aria-label="Retrieving ImmPort data">
+        <span class="nav-page-text">Retrieving ImmPort data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
