@@ -121,6 +121,8 @@ website:
           href: course/SDY3080/ImmPort.qmd
         - text: "Cleanup Gates"
           href: course/SDY3080/SetUp.qmd
+        - text: "Signature Matrices"
+          href: course/SDY3080/SignatureMatrices.qmd
     - section: "Community"
       contents:       
       - text: "AutoSpectral"
